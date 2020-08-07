@@ -24,6 +24,7 @@ class Card extends React.Component{
             data => {
                 this.setState(
                     {
+                        city: this.props.city,
                         temp: data.main.temp,
                         min: data.main.temp_min,
                         max: data.main.temp_max,
